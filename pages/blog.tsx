@@ -1,6 +1,6 @@
-import { useState, useEffect, Key } from 'react';
+import { useState, useEffect } from 'react';
 import Post from '../components/Post';
-import { getPosts } from '../lib/getPosts';
+import { getPosts } from './api/getPosts';
 import { motion } from 'framer-motion';
 import { fadeInUp, routeAnimation, stagger } from '../animation';
 
@@ -17,7 +17,7 @@ const Blog = () => {
   return (
     <>
       <motion.div
-        className='flex flex-grow flex-col px-6 pt-1'
+        className=' flex flex-grow flex-col items-center justify-center px-6 pt-1'
         variants={routeAnimation}
         initial='initial'
         animate='animate'
@@ -33,12 +33,12 @@ const Blog = () => {
             initial='initial'
             animate='animate'
           >
-            {posts.map((posts: { title: Key }) => (
+            {posts.map((posts: any) => (
               <motion.div
                 className='dark:bg-dark-200 col-span-2 rounded-lg bg-gray-200 p-2 md:col-span-1'
                 variants={fadeInUp}
               >
-                <Post key={posts.title} post={posts} />
+                <Post key={posts.id} post={posts} />
               </motion.div>
             ))}
           </motion.div>

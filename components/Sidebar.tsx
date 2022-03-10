@@ -1,8 +1,7 @@
 import { AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai';
 import { FiLinkedin } from 'react-icons/fi';
-import ContactForm from './ContactForm';
 import { useState } from 'react';
-import ReactCardFlip from 'react-card-flip';
+import Image from 'next/image';
 
 const Sidebar = () => {
   // Card Flip Animation
@@ -14,70 +13,58 @@ const Sidebar = () => {
   };
 
   return (
-    <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
-      <div className=''>
-        <img
+    <>
+      <div>
+        <Image
           src='/astronaut.svg'
-          alt='my-image'
-          className='mx-auto h-32 w-32 rounded-full'
+          alt='avatar'
+          className=' mx-auto rounded-full border '
+          height='128px'
+          width='128px'
+          layout='intrinsic'
+          quality='100'
         />
-
-        <h3 className='bg-red-500 bg-clip-text text-center text-2xl font-bold text-transparent'>
-          Self Taught
+        <h3 className='font-kaushan my-4 text-3xl font-medium tracking-wider text-stone-800'>
+          <span className=' dark:text-red-600 '>Tom</span> Yowongjai
         </h3>
-        <p className='bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-center text-2xl font-bold text-transparent'>
-          Web developer
+        <p className=' dark:bg-black-500 w-8/10 my-3 px-2   py-1 text-stone-800'>
+          Aspiring Web-Developer
         </p>
-        <button className=' w-8/10 h-8  cursor-pointer rounded-full bg-gradient-to-r from-green-400 to-blue-400 px-5 text-white duration-300 hover:-translate-y-1 hover:scale-110'>
+        <button className='w-8/10   my-2   h-8 cursor-pointer rounded-full bg-gray-500 from-green-400 to-blue-400 px-5 text-white duration-300 hover:-translate-y-1 hover:scale-110 dark:bg-gradient-to-r'>
           <a href='/assets/Resume.pdf' download='Tom-Resume'>
             Download CV
           </a>
         </button>
         <div className='my-5 mx-auto flex w-9/12 justify-around  md:w-full'>
-          <a href=''>
+          <a href='https://twitter.com/tom_yotwongjai'>
             <AiFillTwitterCircle
-              style={{ color: '#1DA1F2' }}
-              className='h-8 w-8 cursor-pointer duration-300 hover:-translate-y-1 hover:scale-110 '
+              className='h-8 w-8 cursor-pointer text-gray-500 duration-300 hover:-translate-y-1 hover:scale-110 dark:text-blue-400'
+              aria-label='Twitter'
             />
           </a>
-          <a href=''>
+          <a href='https://github.com/tomyotwongjai'>
             <AiFillGithub
-              style={{ color: '#4078c0' }}
-              className='h-8 w-8 cursor-pointer duration-300 hover:-translate-y-1 hover:scale-110'
+              className='h-8 w-8 cursor-pointer text-gray-500 duration-300 hover:-translate-y-1 hover:scale-110 dark:text-white'
+              aria-label='Github'
             />
           </a>
-          <a href=''>
+          <a href='https://www.linkedin.com/in/tomyotwongjai/'>
             <FiLinkedin
-              style={{ color: '#0e76a8' }}
-              className='h-8 w-8 cursor-pointer duration-300 hover:-translate-y-1 hover:scale-110'
+              className='h-8 w-8 cursor-pointer text-gray-500 duration-300 hover:-translate-y-1 hover:scale-110 dark:text-blue-700'
+              aria-label='Linkedin'
             />
           </a>
         </div>
         <div className='my-5 border-2'></div>
         <button
-          className='w-8/10 h-8  cursor-pointer rounded-full bg-gradient-to-r from-green-400 to-blue-400 px-5 text-white duration-300 hover:-translate-y-1 hover:scale-110'
+          className='w-8/10   h-8 cursor-pointer rounded-full bg-gray-500 from-green-400 to-blue-400 px-5 text-white duration-300 hover:-translate-y-1 hover:scale-110 dark:bg-gradient-to-r'
           onClick={() => window.open('mailto:travel3.biz@gmail.com')}
         >
-          Email
+          Get In Touch
         </button>
         <div className='flex items-center justify-between p-3'></div>
-        <button
-          className='w-8/10 h-8  cursor-pointer rounded-full bg-gradient-to-r from-green-400 to-blue-400 px-5 text-white duration-300 hover:-translate-y-1 hover:scale-110'
-          onClick={handleClick}
-        >
-          Contact
-        </button>
       </div>
-      <div>
-        <ContactForm />
-        <button
-          className='my-3 w-6/12  rounded-full bg-gradient-to-r from-green-400 to-blue-400 px-5 text-white hover:scale-105 focus:outline-none'
-          onClick={handleClick}
-        >
-          Return
-        </button>
-      </div>
-    </ReactCardFlip>
+    </>
   );
 };
 

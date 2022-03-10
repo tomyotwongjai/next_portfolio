@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 import { Service } from '../type';
 
 const ServiceCard: FunctionComponent<{ service: Service }> = ({
-  service: { Icon, about, title },
+  service: { about, title },
 }) => {
   const createMarkup = () => {
     return {
@@ -12,11 +12,13 @@ const ServiceCard: FunctionComponent<{ service: Service }> = ({
 
   return (
     <>
-      <div className='item-center flex space-x-4 p-2'>
-        <Icon className='h-12 w-12 text-green-400' />
+      <div className='shadow-neo-2 item-center dark:shadow-custom-dark space-x-4  p-2 '>
         <div>
-          <h4 className='font-bold'>{title}</h4>
-          <p dangerouslySetInnerHTML={createMarkup()} />
+          <h5 className=' font-bold'>{title}</h5>
+          <p
+            className='text-stone-700'
+            dangerouslySetInnerHTML={createMarkup()}
+          />
         </div>
       </div>
     </>

@@ -22,7 +22,8 @@
     "**/*.tsx",
     "components/TimeLine/TimeLineStyles.js",
     "components/TimeLine/TimeLine.jsx.js",
-    "pages/blog/[slug].tsx"
+    "pages/blog/[slug].tsx",
+    "pages/contact.jsx"
   ],
   "exclude": ["node_modules"]
 }

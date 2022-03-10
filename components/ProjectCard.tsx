@@ -39,7 +39,7 @@ const ProjectCard: FunctionComponent<{
 
       <p className='my-2 text-center'>{name}</p>
       {showDetail === id && (
-        <div className='dark:bg-dark-200 shadow-custom-light  absolute top-0 left-0 z-10 grid h-auto w-full gap-x-12 rounded-lg bg-gray-100 p-2 text-black dark:text-white md:grid-cols-2 md:p-10'>
+        <div className='  absolute top-0 left-0 z-10 grid h-auto w-full gap-x-12 rounded-lg bg-gray-200 p-2 text-neutral-800  dark:text-blue-500 md:grid-cols-2 md:p-10'>
           <motion.div variants={stagger} initial='initial' animate='animate'>
             <motion.div
               variants={fadeInUp}
@@ -62,6 +62,7 @@ const ProjectCard: FunctionComponent<{
                 href={github_url}
                 className='item-center dark:bg-dark-500 flex space-x-3 bg-gray-200 px-4 py-2 text-lg'
                 target='_blank'
+                rel='noreferrer'
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
@@ -69,6 +70,7 @@ const ProjectCard: FunctionComponent<{
                 href={deploy_url}
                 className='item-center dark:bg-dark-500 flex space-x-3 bg-gray-200 px-4 py-2 text-lg'
                 target='_blank'
+                rel='noreferrer'
               >
                 <AiFillProject /> <span>Project</span>
               </a>

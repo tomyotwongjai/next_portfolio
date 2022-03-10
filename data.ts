@@ -15,18 +15,14 @@ export const services: Service[] = [
     title: 'Design',
     about:
       'Simple content structure focus on clean design and user interaction ',
-    Icon: RiComputerLine,
   },
   {
-    title: 'Focus',
-    about:
-      'Developing and maintain the user interface and implementing design on mobile websites',
-    Icon: SiTailwindcss,
+    title: 'All devices',
+    about: 'Design with focus on compatible with all devices',
   },
   {
     title: 'Front-end',
     about: 'Continuos learning everything front-end has to offer.',
-    Icon: AiFillGithub,
   },
 ];
 
@@ -46,10 +42,6 @@ export const languages: Skill[] = [
   {
     name: 'ReactJS',
     Icon: RiReactjsFill,
-  },
-  {
-    name: 'VueJS',
-    Icon: RiVuejsFill,
   },
   {
     name: 'NextJS',

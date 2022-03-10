@@ -5,14 +5,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --no-cache"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.4.0",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^6.2.3",
     "install": "^0.13.0",
     "moment": "^2.29.1",
     "next": "12.0.8",
+    "next-seo": "^5.1.0",
     "next-themes": "0.0.15",
     "npm": "^8.3.1",
     "react": "17.0.2",
@@ -26,8 +28,6 @@
     "@types/react": "^17.0.38",
     "@types/react-syntax-highlighter": "^13.5.2",
     "autoprefixer": "^10.4.2",
-    "eslint": "8.7.0",
-    "eslint-config-next": "12.0.8",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.3",

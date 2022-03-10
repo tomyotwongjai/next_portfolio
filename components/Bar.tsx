@@ -12,7 +12,7 @@ const Bar: FunctionComponent<{ data: Skill }> = ({ data: { Icon, name } }) => {
   return (
     <div className='my-2 flex text-white'>
       <motion.div
-        className='flex items-center rounded-full bg-gradient-to-r from-green-400 to-blue-500 px-4 py-1'
+        className=' flex items-center rounded-full bg-gray-500 from-green-400 to-blue-500 px-4 py-1 dark:bg-gradient-to-r'
         animate={{ scale: 1.2 }}
         transition={spring}
         initial='initial'

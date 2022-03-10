@@ -30,18 +30,18 @@ const Navbar = () => {
 
   useEffect(() => {
     if (pathname === '/') setActive('About');
-    if (pathname === 'projects') setActive('Project');
-    if (pathname === 'tech') setActive('Tech');
-    if (pathname === 'Blog') setActive('Blog');
-  }, []);
+    else if (pathname === 'projects') setActive('Project');
+    else if (pathname === 'tech') setActive('Tech');
+    else if (pathname === 'Blog') setActive('Blog');
+  }, [pathname]);
 
   return (
     <div className='my-3 flex justify-between px-5 py-3'>
-      <span className='  bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-xl font-bold text-transparent  md:text-2xl '>
+      <span className='bg-neutral-800 from-green-400 to-blue-400 bg-clip-text text-xl font-bold text-transparent dark:bg-gradient-to-r  md:text-2xl '>
         {active}
       </span>
 
-      <div className=' flex  font-bold text-blue-500 dark:text-white'>
+      <div className=' flex  font-bold text-neutral-800 dark:text-white'>
         <NavItem active={active} setActive={setActive} name='About' route='/' />
         <NavItem
           active={active}

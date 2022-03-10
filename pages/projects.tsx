@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Head from 'next/head';
 import ProjectCard from '../components/ProjectCard';
 import ProjectNavbar from '../components/ProjectNavbar';
 import { projects as projectsData } from '../data';
@@ -33,6 +34,9 @@ const Projects = () => {
       animate='animate'
       exit='exit'
     >
+      <Head>
+        <title>Web Developer | portfolio | Tom Yotwongjai</title>
+      </Head>
       <ProjectNavbar
         handleFilterCategory={handleFilterCategory}
         active={active}
@@ -44,13 +48,14 @@ const Projects = () => {
         initial='initial'
         animate='animate'
       >
-        {projects.map((project) => (
+        {projects.map((project, id) => (
           <motion.div
             className='dark:bg-dark-200 col-span-12 rounded-lg bg-gray-200 p-2 sm:col-span-6 lg:col-span-4'
             variants={fadeInUp}
           >
             <ProjectCard
               project={project}
+              key={id}
               showDetail={showDetail}
               setShowDetail={setShowDetail}
             />
