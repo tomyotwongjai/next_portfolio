@@ -9,7 +9,7 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Web Developer | portfolio | Tom Yotwongjai</title>
+        <title>Web Developer | about | Tom Yotwongjai</title>
       </Head>
       <motion.div variants={fadeInUp} initial='initial' animate='animate'>
         <h2 className='bg-stone-700 from-green-400 to-blue-600 bg-clip-text text-xl font-extrabold text-transparent dark:bg-gradient-to-r  '>

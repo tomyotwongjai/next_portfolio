@@ -16,11 +16,11 @@ const Sidebar = () => {
     <>
       <div>
         <Image
-          src='/astronaut.svg'
+          src='/images/tom.jpg'
           alt='avatar'
-          className=' mx-auto rounded-full border '
-          height='366px'
-          width='355px'
+          className=' rounded-full border '
+          height='128px'
+          width='128px'
           layout='intrinsic'
           quality='100'
         />
