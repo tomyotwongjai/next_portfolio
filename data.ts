@@ -1,4 +1,3 @@
-import { RiComputerLine } from 'react-icons/ri';
 import { Service, Skill, Tech, IsProjects } from './type';
 import {
   AiFillGithub,

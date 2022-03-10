@@ -14,6 +14,9 @@ const resume = () => {
       animate='animate'
       exit='exit'
     >
+      <Head>
+        <title>Web Developer | technologies | Tom Yotwongjai</title>
+      </Head>
       <h3 className='bg-neutral-800 from-green-400 to-blue-400 bg-clip-text text-center text-2xl font-bold text-transparent dark:bg-gradient-to-r '>
         Where I'm Learning
       </h3>

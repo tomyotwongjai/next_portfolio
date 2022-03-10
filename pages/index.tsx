@@ -32,10 +32,9 @@ const index = () => {
           </motion.div>
         </h2>
         <div className='my-3 grid gap-6 md:grid-cols-2'>
-          {/* children's initial and animate property should be same as the parent during a stagger effect  */}
           {services.map((service) => (
             <div
-              className='dark:bg-dark-200 col-span-2 rounded-lg bg-gray-200 p-2 text-stone-700 md:col-span-1'
+              className='dark:bg-dark-200 col-span-2 rounded-lg bg-gray-200 p-2 text-stone-700 dark:text-white md:col-span-1'
               key={service.title}
             >
               <ServiceCard service={service} />

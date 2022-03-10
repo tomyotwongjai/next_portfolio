@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Key } from 'react';
 import Post from '../components/Post';
-import { getPosts } from './api/getPosts';
+import { getPosts } from '../pages/api/getPosts';
 import { motion } from 'framer-motion';
 import { fadeInUp, routeAnimation, stagger } from '../animation';
 
@@ -33,12 +33,12 @@ const Blog = () => {
             initial='initial'
             animate='animate'
           >
-            {posts.map((posts: any) => (
+            {posts.map((posts: { title: Key }) => (
               <motion.div
                 className='dark:bg-dark-200 col-span-2 rounded-lg bg-gray-200 p-2 md:col-span-1'
                 variants={fadeInUp}
               >
-                <Post key={posts.id} post={posts} />
+                <Post key={posts.title} post={posts} />
               </motion.div>
             ))}
           </motion.div>

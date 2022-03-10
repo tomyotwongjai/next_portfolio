@@ -7,6 +7,7 @@
 /* //tailwind use */
 
 body {
+  font-display: optional;
   font-family: 'Open Sans', sans-serif;
 }
 

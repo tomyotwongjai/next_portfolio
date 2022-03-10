@@ -19,15 +19,15 @@ const Sidebar = () => {
           src='/astronaut.svg'
           alt='avatar'
           className=' mx-auto rounded-full border '
-          height='128px'
-          width='128px'
+          height='366px'
+          width='355px'
           layout='intrinsic'
           quality='100'
         />
-        <h3 className='font-kaushan my-4 text-3xl font-medium tracking-wider text-stone-800'>
+        <h3 className='font-kaushan my-4 text-3xl font-medium tracking-wider text-stone-800 dark:text-white'>
           <span className=' dark:text-red-600 '>Tom</span> Yowongjai
         </h3>
-        <p className=' dark:bg-black-500 w-8/10 my-3 px-2   py-1 text-stone-800'>
+        <p className=' dark:bg-black-500 w-8/10 my-3 px-2 py-1  text-stone-800 dark:text-white'>
           Aspiring Web-Developer
         </p>
         <button className='w-8/10   my-2   h-8 cursor-pointer rounded-full bg-gray-500 from-green-400 to-blue-400 px-5 text-white duration-300 hover:-translate-y-1 hover:scale-110 dark:bg-gradient-to-r'>

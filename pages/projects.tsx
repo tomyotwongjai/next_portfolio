@@ -35,7 +35,7 @@ const Projects = () => {
       exit='exit'
     >
       <Head>
-        <title>Web Developer | portfolio | Tom Yotwongjai</title>
+        <title>Web Developer | projects | Tom Yotwongjai</title>
       </Head>
       <ProjectNavbar
         handleFilterCategory={handleFilterCategory}
