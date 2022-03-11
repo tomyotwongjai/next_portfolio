@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -20,10 +20,8 @@
     "**/*.js",
     "**/*.ts",
     "**/*.tsx",
-    "components/TimeLine/TimeLineStyles.js",
-    "components/TimeLine/TimeLine.jsx.js",
-    "pages/blog/[slug].tsx",
-    "pages/contact.jsx"
+    "pages/contact.jsx",
+    "components/ProjectCard.jsx"
   ],
   "exclude": ["node_modules"]
 }

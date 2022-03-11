@@ -1,4 +1,5 @@
 import React from 'react';
+import Sidebar from '../components/Sidebar';
 import { services } from '../data';
 import ServiceCard from '../components/ServiceCard';
 import { motion } from 'framer-motion';
@@ -11,6 +12,10 @@ const index = () => {
       <Head>
         <title>Web Developer | about | Tom Yotwongjai</title>
       </Head>
+      <div className=' col-span-12  h-full p-4 text-center  text-base lg:col-span-3 '>
+        <Sidebar />
+      </div>
+
       <motion.div variants={fadeInUp} initial='initial' animate='animate'>
         <h2 className='bg-stone-700 from-green-400 to-blue-600 bg-clip-text text-xl font-extrabold text-transparent dark:bg-gradient-to-r  '>
           Aloha! My name is Tom Yotwongjai. I have been introduce to programming

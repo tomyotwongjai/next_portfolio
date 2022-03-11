@@ -29,10 +29,10 @@ const Navbar = () => {
   const { pathname } = useRouter();
 
   useEffect(() => {
-    if (pathname === '/') setActive('About');
+    if (pathname === '/') setActive('Home');
     else if (pathname === 'projects') setActive('Project');
     else if (pathname === 'tech') setActive('Tech');
-    else if (pathname === 'Blog') setActive('Blog');
+    else if (pathname === 'blog') setActive('Blog');
   }, [pathname]);
 
   return (
@@ -42,7 +42,7 @@ const Navbar = () => {
       </span>
 
       <div className=' flex  font-bold text-neutral-800 dark:text-white'>
-        <NavItem active={active} setActive={setActive} name='About' route='/' />
+        <NavItem active={active} setActive={setActive} name='Home' route='/' />
         <NavItem
           active={active}
           setActive={setActive}
