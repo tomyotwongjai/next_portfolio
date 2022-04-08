@@ -6,7 +6,8 @@ const Posts = ({ post }) => {
   return (
     <>
       <div className='flex w-full flex-col items-center justify-center p-12 text-left sm:flex-row'>
-        <Link href='https://dev.to/tomyotwongjai'>
+        {/* <Link href='https://dev.to/tomyotwongjai'> */}
+        <Link href={{ pathname: '/posts/[slug]', query: { id: post.id } }}>
           <a
             className='w-full text-gray-500 dark:text-gray-300'
             target='_blank'

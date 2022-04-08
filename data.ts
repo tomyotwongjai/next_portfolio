@@ -74,6 +74,17 @@ export const tools: Tech[] = [
 export const projects: IsProjects[] = [
   {
     id: 1,
+    name: 'Discord Clone',
+    description:
+      'A clone of the popular Discord application. This project is built with ReactJS, TailwindCSS, and Firebase/firestore.',
+    image_path: '/images/discord.png',
+    deploy_url: 'https://my-discord-clone.vercel.app/',
+    github_url: 'https://github.com/tomyotwongjai/discord_clone',
+    category: ['previous'],
+    key_techs: ['React', 'Redux', 'Firebase', 'TailwindCSS'],
+  },
+  {
+    id: 2,
     name: 'Weather Application',
     description:
       'Weather application build with react. Fetching current weather information using openweather API ',
@@ -89,7 +100,7 @@ export const projects: IsProjects[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: 'Static landing page',
     description:
       'Simple responsive static Landing page using html/css and some javascript for animation & scrollup ',
@@ -105,7 +116,7 @@ export const projects: IsProjects[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: 'Chat Application',
     description:
       'Fully functional end to end chat application using chat.io API, google authentication. Using firebase as a backend',
@@ -116,7 +127,7 @@ export const projects: IsProjects[] = [
     key_techs: ['React', 'Chat.io api', 'react-hook'],
   },
   {
-    id: 4,
+    id: 5,
     name: 'First Portfolio',
     description:
       'Weather application build with react. Fetching current weather information using openweather API ',
